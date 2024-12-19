@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/typography": "github:tailwindcss/typography",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "sass": "^1.81.0",
+    "tailwindcss": "^3.4.15",
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
+  },
+  "scripts": {
+    "wipe:statics": "rm -rf ./.vitepress/cache/ && rm -rf ./.vitepress/dist/",
+    "dev": "npm run wipe:statics && vitepress dev",
+    "dev:with-blogs": "npm run wipe:statics && vitepress dev . -- --with-blogs",
+    "build": "npm run wipe:statics && vitepress build",
+    "build:with-blogs": "npm run wipe:statics && vitepress build . -- --with-blogs",
+    "preview": "npm run wipe:statics && vitepress build && vitepress preview",
+    "preview:with-blogs": "npm run wipe:statics && vitepress build . -- --with-blogs && vitepress preview"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "dependencies": {
+    "reading-time": "^1.5.0"
+  }
+}
