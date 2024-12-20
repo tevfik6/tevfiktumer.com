@@ -4,7 +4,7 @@ const withBlogs = args.includes("--with-blogs")
 const isDev = args.includes('dev'); // Check if "dev" is in the command-line args
 
 const configs = {
-    srcDir: "./pages",
+    srcDir: "./pages/",
     title: "Personal Portfolio Website",
     description: "Tevfik Tümer - Personal Portfolio Website",
     head: [
