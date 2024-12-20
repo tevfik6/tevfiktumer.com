@@ -1,7 +1,7 @@
 ---
 title: Git ve GitHub Hakkında Bilgiler
 lang: tr
-short: "<p><strong>Git</strong>, dosya ve klasörlerinizi takip eden bir <strong>Kaynak Kod Yönetim (Source Code Managment)</strong> programıdır. Daha çok metin belgesi/döküman değişikliklerini takip etmek için kullanılır. </p> <p>Git'i kullanarak bir grup içinde birbirinden bağımsız bir şekilde kod yazabilir, sadece bir komut ile yapılan değişiklikleri lokal sisteminize indirebilir, değişikliklere bakabilir, dosya ve değişiklikleri birbirleri arasında karşılaştırabilir ve belirli tarihlerdeki versiyonları kendi aralarında kıyaslama yapmanızı sağlayabilirsiniz. Bu sadece yapabileceklerinizin bir kısmıdır. Kısacası yapabileceklerinizin listesi oldukça uzun ve alışkanlık edindikten sonra asla bırakamayacağınız bir araçtır.
+short: "<div class=\"float-left mr-[1rem] mt-[1rem] dark:bg-slate-700\"> <img src=\"/images/blogs/git-ve-github-hakkinda-bilgiler/Git-logo.png\" alt=\"Git Logo\" class=\"max-h-[60px]\"></div><p><strong>Git</strong>, dosya ve klasörlerinizi takip eden bir <strong>Kaynak Kod Yönetim (Source Code Managment)</strong> programıdır. Daha çok metin belgesi/döküman değişikliklerini takip etmek için kullanılır. </p> <p>Git'i kullanarak bir grup içinde birbirinden bağımsız bir şekilde kod yazabilir, sadece bir komut ile yapılan değişiklikleri lokal sisteminize indirebilir, değişikliklere bakabilir, dosya ve değişiklikleri birbirleri arasında karşılaştırabilir ve belirli tarihlerdeki versiyonları kendi aralarında kıyaslama yapmanızı sağlayabilirsiniz. Bu sadece yapabileceklerinizin bir kısmıdır. Kısacası yapabileceklerinizin listesi oldukça uzun ve alışkanlık edindikten sonra asla bırakamayacağınız bir araçtır.
 <a href=\"https://github.com\">GitHub</a>, üzerinden Git kullanabileceğiniz servis sağlayıcıdır. Git'i kendi bilgisayarınızda...</p>"
 created_at: "2016-08-21T01:02:08+0000"
 published_at: "2013-02-22T10:15:34+0000"
@@ -14,7 +14,7 @@ import { withBase } from 'vitepress'
 ## Git nedir? ve Ne için kullanılır? 
 
 <div class="float-left mr-[1rem] mt-[1rem] dark:bg-slate-700"> 
-    <img :src="withBase('./images/Git-logo.png')" alt="Git Logo" class="max-h-[60px]">
+    <img :src="withBase('/images/blogs/git-ve-github-hakkinda-bilgiler/Git-logo.png')" alt="Git Logo" class="max-h-[60px]">
 </div>
 
 **Git**, dosya ve klasörlerinizi takip eden bir **Kaynak Kod Yönetim (Source Code Managment)** programıdır. Daha çok metin belgesi/döküman değişikliklerini takip etmek için kullanılır.
@@ -37,7 +37,7 @@ Git, 2005 yılının Nisan ayında [Linus Torvalds] tarafından geliştirilmeye 
 ## GitHub nedir?
 
 <div class="float-right ml-[1rem] mt-[1rem]"> 
-    <img :src="withBase('./images/GitHub-logo.png')" alt="GitHub Logo" class="max-h-[60px]">
+    <img :src="withBase('/images/blogs/git-ve-github-hakkinda-bilgiler/GitHub-Logo.png')" alt="GitHub Logo" class="max-h-[60px]">
 </div>
 
 [GitHub], üzerinden Git kullanabileceğiniz servis sağlayıcıdır. Git'i kendi bilgisayarınızda kendi başınıza kullanabildiğiniz gibi, kendi server'inizida kurarak dünyanın öbür ucundaki arkadaşlarınızla projenizi geliştirebilirsiniz. GitHub, bu noktada kendi sistemlerini kurabilecek bütçesi olmayan insanlara mükemmel bir servis sağlayan sistemdir. 	
@@ -45,7 +45,7 @@ Git, 2005 yılının Nisan ayında [Linus Torvalds] tarafından geliştirilmeye 
 [GitHub] adresini takip ederseniz, açık kaynak kullanımda sınırsız bir şekilde sistemi kullanabiliyorsunuz. Ama şirket olarak çalışmak yada projelerinizin kodlarını diğer insanlarla paylaşmak istemiyorsanız çok düşük fiyatlara kapalı kaynak projelerde oluşturabiliyorsunuz.
 
 <div class="float-left pr-[1rem] pb-[0.5rem]"> 
-    <img :src="withBase('./images/octodex-original.jpg')" alt="GitHub Octodex Logo" class="max-h-[60px]">
+    <img :src="withBase('/images/blogs/git-ve-github-hakkinda-bilgiler/octodex-original.jpg')" alt="GitHub Octodex Logo" class="max-h-[60px]">
 </div>
 
 Aslında bu servisin en güzel yanlarından birisi; sadece bir proje hedefi olan insanlar için olmadığı gibi hiç bir proje hedefi olmayan kişiler için kendilerine yeni projeler bulmalarına yardımcı olmalası da şahsi olarak çok sevdiğim yönlerinden birisidir. GitHub'da kod üreterek yeni insanlar tanıyabilir, bildiğiniz dilleri geliştirebilir, yeni algoritmik yapıları keşif edebilir, belkide iş imkanı bile bulabilirsiniz. Bunun için yapmanız gereken GitHub'a üye olduktan sonra var olan açık kaynak projelerde gezinip bildiğiniz diller çerçevesinde projelere göz atabilir, beğendiğiniz bir projeyi kendi projeleriniz arasına alabilir (forking), o projeden bağımsız devam edebilir yada yaptığınız yenilikleri birleştirilmesi için proje sahiplerine gönderme talebinde bulunabilirsiniz.
