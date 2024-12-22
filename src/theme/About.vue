@@ -1,28 +1,39 @@
 <script setup>
 import { experiences, skills } from "../data/about";
-console.debug({ experiences, skills });
+
 </script>
 
 <template>
-    <div class="py-6 px-6 space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-        <img class="block h-32 rounded-xl m-2 sm:shrink-0 shadow-xl shadow-slate-300 dark:shadow-slate-700"
-            src="http://www.gravatar.com/avatar/6dcb5dcc85145bbd70ef3c4e461544e3?s=144&d=mm&r=g" alt="Tevfik Tümer">
-        <div class="space-y-2">
-            <div class="space-y-1">
-                <p class="text-3xl text-slate-700 font-medium dark:text-slate-200">
-                    Hi! This is Tevfik from Munich/Germany
-                </p>
-                <p class="text-slate-600 font-medium text-lg dark:text-slate-400">
-                    <!-- Full Stack Developer and Computer Engineer -->
-                    Sr. Developer Support Engineer @ <a href="https://sugarcrm.com/de/">SugarCRM</a> - Full Stack
-                    Developer
-                    - Bash & Regex Fan - Apprentice Gopher
-                </p>
-                <p class="text-slate-500">
-                    Here you can find some information about me, check out my works and send a message to me.
-                </p>
-            </div>
+    <div class="flex flex-row mt-1 sm:mt-2">
+        <div class="flex grow flex-col align-middle justify-center ml-2">
+            <p class="text-3xl text-slate-700 font-medium dark:text-slate-200 ">
+                Hi! This is Tevfik from Munich, Germany
+            </p>
+            <p class="text-slate-600 font-medium text-lg dark:text-slate-400 hidden sm:block">
+                <!-- Full Stack Developer and Computer Engineer -->
+                Sr. Developer Support Engineer @ <a href="https://sugarcrm.com/de/">SugarCRM</a> - Full Stack
+                Developer
+                - Bash & Regex Fan - Apprentice Gopher
+            </p>
+            <p class="text-slate-500 hidden sm:block">
+                Here you can find some information about me, check out my works and send a message to me.
+            </p>
         </div>
+        <div class="flex-none">
+            <img class="block h-32 rounded-xl mx-4 my-2 sm:my-4 sm:shrink-0 shadow-xl shadow-slate-300 dark:shadow-slate-700"
+                src="http://www.gravatar.com/avatar/6dcb5dcc85145bbd70ef3c4e461544e3?s=144&d=mm&r=g" alt="Tevfik Tümer">
+        </div>
+    </div>
+    <div class="flex flex-col sm:hidden mt-2">
+        <p class="text-slate-600 font-medium text-lg dark:text-slate-400">
+            <!-- Full Stack Developer and Computer Engineer -->
+            Sr. Developer Support Engineer @ <a href="https://sugarcrm.com/de/">SugarCRM</a> - Full Stack
+            Developer
+            - Bash & Regex Fan - Apprentice Gopher
+        </p>
+        <p class="text-slate-500">
+            Here you can find some information about me, check out my works and send a message to me.
+        </p>
     </div>
 
     <div class="flex flex-column items-center mt-2 mb-4">
@@ -30,7 +41,7 @@ console.debug({ experiences, skills });
         <hr class="grow dark:text-slate-300">
     </div>
     <ul class="space-y-6">
-        <li class="border-l-4 px-4 last:mb-3 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
+        <li class="border-l-4 pl-4 last:mb-3 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
             <h4 class="text-lg text-slate-800 dark:text-slate-300">Computer Engineering <span
                     class="float-right text-sm text-tt-dark dark:font-semibold">2009 - 2012</span></h4>
             <h5 class="text-slate-500 mb-2">Izmir University of Economics, Bachelor</h5>
@@ -44,7 +55,7 @@ console.debug({ experiences, skills });
                 only have I increased my experience in C++ and Java but I have also gained necessary skills for Computer
                 Engineering.</p>
         </li>
-        <li class="border-l-4 px-4 last:mb-3 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
+        <li class="border-l-4 pl-4 last:mb-3 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
             <h4 class="text-lg text-slate-800 dark:text-slate-300">Computer Technologies and Programming<span
                     class="float-right text-sm text-tt-dark dark:font-semibold">2002 - 2005</span></h4>
             <h5 class="text-slate-500 mb-2">Izmir University of Economics, Associate Degree</h5>
@@ -64,15 +75,15 @@ console.debug({ experiences, skills });
         <hr class="grow dark:text-slate-300">
     </div>
     <ul class="space-y-3">
-        <li class="border-l-4 px-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
+        <li class="border-l-4 pl-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
             <h4 class="text-lg text-slate-800 dark:text-slate-300">Certified Sugar Developer Specialist<span
                     class="float-right text-sm text-tt-dark dark:font-semibold">2015</span></h4>
         </li>
-        <li class="border-l-4 px-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
+        <li class="border-l-4 pl-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
             <h4 class="text-lg text-slate-800 dark:text-slate-300">Certified Sugar Administration Specialist<span
                     class="float-right text-sm text-tt-dark dark:font-semibold">2014</span></h4>
         </li>
-        <li class="border-l-4 px-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
+        <li class="border-l-4 pl-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark">
             <h4 class="text-lg text-slate-800 dark:text-slate-300">Oracle Database Course Certification<span
                     class="float-right text-sm text-tt-dark dark:font-semibold">2011</span></h4>
         </li>
@@ -84,7 +95,7 @@ console.debug({ experiences, skills });
     </div>
 
     <ul class="space-y-3">
-        <li class="border-l-4 px-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark"
+        <li class="border-l-4 pl-4 py-0.5 rounded-tl-md rounded-bl-md border-tt-lighter dark:border-tt-dark"
             v-for="exp in experiences">
             <!-- <h4 class="text-lg text-slate-800 dark:text-slate-300">Certified Sugar Developer Specialist<span class="float-right text-sm text-tt-dark dark:font-semibold">2015</span></h4> -->
             <h4 class="text-lg text-slate-800 dark:text-slate-300">{{ exp.name }}<span
@@ -110,7 +121,7 @@ console.debug({ experiences, skills });
             <h3 class="text-lg pr-3" v-text="subname" />
             <hr class="grow dark:text-slate-300">
         </div>
-        <ul class="space-y-2 pr-14 pl-6">
+        <ul class="space-y-2 px-6 sm:pr-14">
             <li class="flex flex-columns items-center" v-for="lang in skill">
                 <div class="text-right w-80 pr-6" v-text="lang.name" />
                 <div class="h-4 w-full bg-slate-100 dark:bg-slate-700 rounded grow">
