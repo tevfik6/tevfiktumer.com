@@ -1,6 +1,6 @@
 import fs from 'fs'
 import { resolve } from 'path'
-import { slugify } from './slugify';
+import { slugify } from './slugify.js';
 export const postsPerPage = 6;
 const pagesPath = resolve('./pages');
 
@@ -114,22 +114,25 @@ export async function generateTagPages(blogs) {
     }
     console.debug({ tags });
     const tagPagesPath = `${pagesPath}/tag`;
-    if (!fs.existsSync(tagPagesPath)) {
-        fs.mkdirSync(tagPagesPath, { recursive: true });
+
+    if (fs.existsSync(tagPagesPath)) {
+        fs.rmSync(tagPagesPath, { recursive: true, force: true });
     }
+    fs.mkdirSync(tagPagesPath, { recursive: true });
 
     const writeTagPage = (path, content) => {
         const indexPath = `${path}/index.md`
-        console.debug({ path });
         fs.mkdirSync(path, { recursive: true });
-        console.debug({ indexPath, content })
+        console.debug('writeTagPage', { path, indexPath, content });
         fs.writeFileSync(indexPath, content)
     }
     for (const langTagPath in tags) {
         if (Object.prototype.hasOwnProperty.call(tags, langTagPath)) {
             const tagPath = `${tagPagesPath}/${langTagPath}`;
             const totalPostForCurLang = tags[langTagPath];
-            const totalPagesForCurLang = totalPostForCurLang % postsPerPage === 0 ? totalPostForCurLang / postsPerPage : Math.floor(totalPostForCurLang / postsPerPage) + 1;
+            const totalPagesForCurLang = totalPostForCurLang % postsPerPage === 0
+                ? totalPostForCurLang / postsPerPage
+                : Math.floor(totalPostForCurLang / postsPerPage) + 1;
             console.debug({ tagPath, totalPostForCurLang, totalPagesForCurLang });
             const [lang, tag] = langTagPath.split('/');
             if (totalPagesForCurLang > 0) {
@@ -137,10 +140,11 @@ export async function generateTagPages(blogs) {
                     const tagContent = `---\npagination: ${i}\ntag: ${tag}\nlang: ${lang}\n---`.trim()
                     const tagPathPage = `${tagPath}/page`
                     const tagPathNumber = `${tagPathPage}/${i}`
-                    writeTagPage(tagPathNumber, tagContent)
-                    if (i === 1) {
-                        writeTagPage(tagPathPage, tagContent)
+                    if (i == 1) {
                         writeTagPage(tagPath, tagContent)
+                    }
+                    if (totalPagesForCurLang > 1) {
+                        writeTagPage(tagPathNumber, tagContent)
                     }
                 }
             }

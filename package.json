@@ -11,7 +11,8 @@
   },
   "scripts": {
     "wipe:statics": "rm -rf ./.vitepress/cache/ && rm -rf ./.vitepress/dist/",
-    "list-builded-pages": "find ./.vitepress/dist/ -type f -name '*.html'",
+    "list-builded-pages": "find ./.vitepress/dist -type f -name '*.html'",
+    "generated-pages": "node src/scripts/generated-pages.js",
     "dev": "npm run wipe:statics && vitepress dev",
     "dev:with-blogs": "npm run wipe:statics && vitepress dev . -- --with-blogs",
     "build": "npm run wipe:statics && vitepress build && npm run list-builded-pages",
@@ -26,6 +27,7 @@
     }
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "reading-time": "^1.5.0"
   }
 }

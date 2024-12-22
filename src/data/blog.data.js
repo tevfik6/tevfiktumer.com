@@ -4,8 +4,6 @@ import {
     postsPerPage,
     formatDate,
     formatTags,
-    generatePagination,
-    generateTagPages
 } from "../utils/shared";
 
 
@@ -31,9 +29,9 @@ export default createContentLoader("blog/*/*/*.md", {
             .filter(i => i.index !== true && !i.url.match(/\/blog\/.+?\/page\//))
             .sort((a, b) => b.sort_date.time - a.sort_date.time)
         // const blogsData =
-        await generatePagination(blogs);
+        // await generatePagination(blogs);
         // const blogTags = 
-        await generateTagPages(blogs);
+        // await generateTagPages(blogs);
         // console.debug("postsPerPage", postsPerPage);
         // console.debug("blogsData", blogsData);
         // console.debug("blogsData", blogsData);
