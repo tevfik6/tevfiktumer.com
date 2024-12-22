@@ -35,20 +35,7 @@ const configs = {
                     api: 'modern' // or "modern"
                 }
             }
-        },
-        plugins: [
-            {
-                name: 'generate-pagination-and-tags',
-                async options() {
-                    console.log('Starting Markdown file generation...');
-                    console.debug(process.cwd());
-                    const loader = require('../src/data/blog.data.js').default;
-                    console.debug("Calling temproray blog loader")
-                    const blogData = await loader.load();
-                    console.debug({ blogData });
-                }
-            }
-        ]
+        }
     },
 };
 
