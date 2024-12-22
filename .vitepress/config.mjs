@@ -43,7 +43,7 @@ const configs = {
                     console.debug(process.cwd());
                     const loader = require('../src/data/blog.data.js').default;
                     console.debug("Calling temproray blog loader")
-                    const blogData = loader.load();
+                    const blogData = await loader.load();
                     console.debug({ blogData });
                 }
             }
