@@ -3,5 +3,3 @@
 CNAME
 .vitepress/cache
 .vitepress/dist
-pages/blog/*/page/
-pages/tag/
