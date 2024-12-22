@@ -11,10 +11,11 @@
   },
   "scripts": {
     "wipe:statics": "rm -rf ./.vitepress/cache/ && rm -rf ./.vitepress/dist/",
+    "list-builded-pages": "find ./.vitepress/dist/ -type f -name '*.html'",
     "dev": "npm run wipe:statics && vitepress dev",
     "dev:with-blogs": "npm run wipe:statics && vitepress dev . -- --with-blogs",
-    "build": "npm run wipe:statics && vitepress build",
-    "build:with-blogs": "npm run wipe:statics && vitepress build . -- --with-blogs",
+    "build": "npm run wipe:statics && vitepress build && npm run list-builded-pages",
+    "build:with-blogs": "npm run wipe:statics && vitepress build . -- --with-blogs && npm run list-builded-pages",
     "preview": "npm run wipe:statics && vitepress build && vitepress preview",
     "preview:with-blogs": "npm run wipe:statics && vitepress build . -- --with-blogs && vitepress preview"
   },
