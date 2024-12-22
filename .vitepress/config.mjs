@@ -39,7 +39,8 @@ const configs = {
         plugins: [
             {
                 name: 'generate-pagination-and-tags',
-                async buildStart() {
+                async options() {
+                    console.log('Starting Markdown file generation...');
                     console.debug(process.cwd());
                     const loader = require('../src/data/blog.data.js').default;
                     console.debug("Calling temproray blog loader")
