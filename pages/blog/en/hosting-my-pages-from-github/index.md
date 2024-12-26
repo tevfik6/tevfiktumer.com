@@ -1,7 +1,7 @@
 ---
 title: Hosting My Pages from GitHub
 lang: en
-short: "<p>It has been quite some time since I wrote a new blog post. Over the past couple of years, various ongoing issues kept me from writing. irst of all, I’ve been targeted...</p>"
+short: "<p>It has been quite some time since I wrote a new blog post. Over the past couple of years, various ongoing issues kept me from writing. First of all, I’ve been targeted by some kind of ...</p>"
 tags: Github, Vitepress, Vite
 date: 2016-11-04 02:00:40
 created_at: "2024-12-26T22:03:00+0200"
