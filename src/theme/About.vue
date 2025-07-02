@@ -11,7 +11,7 @@ import { experiences, skills } from "../data/about";
             </p>
             <p class="text-slate-600 font-medium text-lg dark:text-slate-400 hidden sm:block">
                 <!-- Full Stack Developer and Computer Engineer -->
-                Sr. Developer Support Engineer @ <a href="https://sugarcrm.com/de/">SugarCRM</a> - Full Stack
+                Senior Software Engineer @ <a href="https://sugarcrm.com/de/">SugarCRM</a> - Full Stack
                 Developer
                 - Bash & Regex Fan - Apprentice Gopher
             </p>
@@ -27,7 +27,7 @@ import { experiences, skills } from "../data/about";
     <div class="flex flex-col sm:hidden mt-2">
         <p class="text-slate-600 font-medium text-lg dark:text-slate-400">
             <!-- Full Stack Developer and Computer Engineer -->
-            Sr. Developer Support Engineer @ <a href="https://sugarcrm.com/de/">SugarCRM</a> - Full Stack
+            Senior Software Engineer @ <a href="https://sugarcrm.com/de/">SugarCRM</a> - Full Stack
             Developer
             - Bash & Regex Fan - Apprentice Gopher
         </p>
