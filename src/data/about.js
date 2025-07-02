@@ -1,7 +1,25 @@
 const experiences = [
     {
         name: "SugarCRM Deutschland GmbH",
-        date: "2017 - Present",
+        date: "2025 - Present",
+        title: "Senior Software Engineer",
+        description: '',
+        links: [
+            'http://www.sugarcrm.com/de'
+        ]
+    },
+    {
+        name: "SugarCRM Deutschland GmbH",
+        date: "2022 - 2025",
+        title: "CX Software Engineer",
+        description: '',
+        links: [
+            'http://www.sugarcrm.com/de'
+        ]
+    }, 
+    {
+        name: "SugarCRM Deutschland GmbH",
+        date: "2017 - 2022",
         title: "Senior Developer Support Engineer",
         description: '',
         links: [
