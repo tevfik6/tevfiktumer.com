@@ -1,7 +1,16 @@
 const experiences = [
     {
+        name: "SugarAI (formerly SugarCRM) Deutschland GmbH",
+        date: "2026 - Present",
+        title: "Senior Software Engineer",
+        description: '',
+        links: [
+            'http://sugarai.com/de'
+        ]
+    }, 
+    {
         name: "SugarCRM Deutschland GmbH",
-        date: "2025 - Present",
+        date: "2025 - 2026",
         title: "Senior Software Engineer",
         description: '',
         links: [
